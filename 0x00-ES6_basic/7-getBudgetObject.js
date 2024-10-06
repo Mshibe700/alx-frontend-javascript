@@ -1,8 +1,9 @@
-export default function createBudgetObject(totalIncome, totalGDP, perCapitaIncome) {
+export default function createBudgetObject(income, gdp, capita) {
+  // Using ES6 shorthand syntax where key names match variable names
   const budget = {
-    income: totalIncome,
-    gdp: totalGDP,
-    capita: perCapitaIncome,
+    income,
+    gdp,
+    capita,
   };
 
   return budget;
